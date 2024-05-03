@@ -33,7 +33,7 @@ This data is then converted into separate CSV files to ingest into Neo4j databas
 2. lots.csv `(:lot)`
 3. jobs.csv `(:job)`
 4. item_belongs_to_lot.csv `(:item)-[:BELONGS_TO]->(:lot)`
-5. job_consumes_lot.csv `(:job)-[:CONSUMES]->(:lot)`
+5. lot_consumed_by_job.csv `(:lot)-[:CONSUMED_BY]->(:job)`
 6. job_produces_lot.csv `(:job)-[:PRODUCES]->(:lot)`
 
 The data generation process is explained in the [Data Generation](src/01_data_generation.ipynb) notebook.
